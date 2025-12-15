@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gayatri Subhalaxmi | Portfolio</title>
+  <style>
+    :root {
+      --primary: #002147; /* IIT Navy */
+      --secondary: #f4f6f9;
+      --accent: #f9a602; /* Gold accent */
+      --text: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      border-left: 5px solid var(--accent);
+      padding-left: 10px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary);
+      color: white;
+      margin-top: 40px;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gayatri Subhalaxmi</h1>
+  <p>Graduate Student | Materials Science | Physics & Computer Science</p>
+  <p>📍 IIT Bombay, India</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a graduate student at IIT Bombay with research interests in 2D material growth, defect engineering,
+      optoelectronics, quantum nanophotonics, flexible electronics, and bioelectronics. I have a strong
+      interdisciplinary background in Physics, Materials Science, and Computer Science.
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>IIT Bombay</h3>
+    <p>Graduate Student, MEMS Department (Jan 2024 – Present)</p>
+    <p><strong>CPI:</strong> 9.03 / 10</p>
+  </div>
+  <div class="card">
+    <h3>IISER Berhampur</h3>
+    <p>BS–MS Dual Degree in Physics, Minor in Computer Science (2018 – 2023)</p>
+    <p><strong>CPI:</strong> 9.01 / 10 (Distinction)</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Research Experience</h2>
+  <div class="card">
+    <h3>Defect Engineering in 2D Materials – IIT Bombay</h3>
+    <p><em>Graduate Student | Jan 2024 – Present</em></p>
+    <ul>
+      <li><strong>Instrumentation TA</strong>, LRIS Raman System – SAIF, IIT Bombay (Dec 2024 – Present)</li>
+      <li><strong>Instrumentation TA</strong>, ZEISS FIB-SEM – MEMS Department, IIT Bombay (Dec 2024 – Present)</li>
+      <li><strong>Teaching Assistant</strong>, MM 448 Lab – Thin Films & Physical Vapor Deposition (Jan 2025 – Apr 2025)</li>
+      <li><strong>Teaching Assistant</strong>, MM 221 Lab – Sensors, Instrumentation & Measurements (Aug 2024 – Nov 2024)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Flexible Electronics – IISc Bangalore</h3>
+    <p><em>Master’s Dissertation | Jun 2022 – Dec 2023</em></p>
+    <ul>
+      <li>Fabrication of flexible and stretchable electronic devices</li>
+      <li>Tunable strain memory and bi-directional bending sensors</li>
+    </ul>
+  </div>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <div class="card">
+    <h3>Defect Engineering in 2D Materials – IIT Bombay</h3>
+    <ul>
+      <li>Site-specific defect engineering in TMDCs</li>
+      <li>Controlled CVD growth at engineered defect sites</li>
+      <li>Optoelectronic tuning using structural and optical simulations</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Flexible & Stretchable Electronics – IISc Bangalore</h3>
+    <ul>
+      <li>Liquid metal based flexible device fabrication</li>
+      <li>Strain memory and bi-directional bending sensors</li>
+      <li>Applications in object contour detection</li>
+    </ul>
+  </div>
+</section>
+
+<section id="publications">
+  <h2> Conferences</h2>
+  <div class="card">
+    <ul>
+      <li>Women in Optics and Photonics in India–Asia (WOPI), IIT Bombay, 2024</li>
+      <li>ESTESODP Conference, IIT Bombay, 2024</li>
+      <li>PHOTONICS 2023, IISc Bangalore</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+
+<section id="teaching">
+  <h2>Teaching & TA Experience</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Instrumentation TA</strong>, LRIS Raman System – SAIF, IIT Bombay (Dec 2024 – Present)</li>
+      <li><strong>Instrumentation TA</strong>, ZEISS FIB SEM – MEMS Dept, IIT Bombay (Dec 2024 – Present)</li>
+      <li><strong>Teaching Assistant</strong>, MM 448 Lab – Thin Films & Physical Vapor Deposition (Jan 2025 – Apr 2025)</li>
+      <li><strong>Teaching Assistant</strong>, MM 221 Lab – Sensors, Instrumentation & Measurements (Aug 2024 – Nov 2024)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Programming:</strong> Python, MATLAB, C/C++, Machine Learning, Deep Learning</li>
+      <li><strong>Simulation:</strong> FDTD, DFT (VASP), COMSOL</li>
+      <li><strong>Instrumentation:</strong> CVD, PVD, Raman, SEM, FTIR, UTM</li>
+      <li><strong>Tools:</strong> Arduino, Blender, LaTeX, ImageJ</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>📧 Email: <a href="mailto:23D0989@iitb.ac.in">23D0989@iitb.ac.in</a></p>
+    <p>📞 Phone: +91 9556903519</p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/gayatri-subhalaxmi" target="_blank">gayatri-subhalaxmi</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Gayatri Subhalaxmi | Portfolio Website</p>
+</footer>
+
+<script>
+  // Simple smooth scroll
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(link.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
