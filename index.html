@@ -12,9 +12,9 @@
 
   <style>
     :root {
-      --primary: #002147; /* IIT Navy */
+      --primary: #002147;
       --secondary: #f4f6f9;
-      --accent: #f9a602; /* Gold */
+      --accent: #f9a602;
       --text: #1a1a1a;
     }
 
@@ -31,6 +31,7 @@
       line-height: 1.6;
     }
 
+    /* ================= HEADER ================= */
     header {
       background: var(--primary);
       color: white;
@@ -38,15 +39,33 @@
       text-align: center;
     }
 
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid var(--accent);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center; /* TOP crop */
+    }
+
     header h1 {
       font-size: 2.5rem;
+      margin-top: 10px;
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 8px;
       font-size: 1.1rem;
     }
 
+    /* ================= NAV ================= */
     nav {
       background: white;
       display: flex;
@@ -65,6 +84,7 @@
       font-weight: bold;
     }
 
+    /* ================= SECTIONS ================= */
     section {
       max-width: 1000px;
       margin: 40px auto;
@@ -90,6 +110,7 @@
       margin-left: 20px;
     }
 
+    /* ================= FOOTER ================= */
     footer {
       text-align: center;
       padding: 20px;
@@ -110,9 +131,14 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
+  <div class="profile-pic">
+    <img src="profile_pic.jpg" alt="Gayatri Subhalaxmi profile photo">
+  </div>
+
   <h1>Gayatri Subhalaxmi</h1>
   <p>Graduate Student | Materials Science | Physics & Computer Science</p>
   <p>IIT Bombay, India</p>
@@ -132,9 +158,9 @@
   <h2>About Me</h2>
   <div class="card">
     <p>
-      I am a graduate student at IIT Bombay with research interests in 2D material growth, defect engineering,
-      optoelectronics, quantum nanophotonics, flexible electronics, and bioelectronics. I have a strong
-      interdisciplinary background in Physics, Materials Science, and Computer Science.
+      I am a graduate student at IIT Bombay with research interests in 2D material growth,
+      defect engineering, optoelectronics, quantum nanophotonics, flexible electronics,
+      and bioelectronics.
     </p>
   </div>
 </section>
@@ -149,7 +175,7 @@
   <div class="card">
     <h3>IISER Berhampur</h3>
     <p>BS–MS Dual Degree in Physics, Minor in Computer Science (2018 – 2023)</p>
-    <p><strong>CPI:</strong> 9.01 / 10 (Distinction)</p>
+    <p><strong>CPI:</strong> 9.01 / 10</p>
   </div>
 </section>
 
@@ -159,16 +185,8 @@
     <h3>Defect Engineering in 2D Materials – IIT Bombay</h3>
     <ul>
       <li>Site-specific defect engineering in TMDCs</li>
-      <li>Controlled CVD growth at engineered defect sites</li>
-      <li>Optoelectronic tuning using structural and optical simulations</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Flexible & Stretchable Electronics – IISc Bangalore</h3>
-    <ul>
-      <li>Liquid metal based flexible device fabrication</li>
-      <li>Strain memory and bi-directional bending sensors</li>
-      <li>Applications in object contour detection</li>
+      <li>Controlled CVD growth</li>
+      <li>Optoelectronic tuning using simulations</li>
     </ul>
   </div>
 </section>
@@ -177,9 +195,9 @@
   <h2>Conferences</h2>
   <div class="card">
     <ul>
-      <li>Women in Optics and Photonics in India–Asia (WOPI), IIT Bombay, 2024</li>
-      <li>ESTESODP Conference, IIT Bombay, 2024</li>
-      <li>PHOTONICS 2023, IISc Bangalore</li>
+      <li>WOPI – IIT Bombay, 2024</li>
+      <li>ESTESODP – IIT Bombay, 2024</li>
+      <li>PHOTONICS – IISc Bangalore, 2023</li>
     </ul>
   </div>
 </section>
@@ -188,10 +206,10 @@
   <h2>Teaching & TA Experience</h2>
   <div class="card">
     <ul>
-      <li><strong>Instrumentation TA</strong>, LRIS Raman System – SAIF, IIT Bombay (Dec 2024 – Present)</li>
-      <li><strong>Instrumentation TA</strong>, ZEISS FIB SEM – MEMS Dept, IIT Bombay (Dec 2024 – Present)</li>
-      <li><strong>Teaching Assistant</strong>, MM 448 Lab – Thin Films & Physical Vapor Deposition (Jan 2025 – Apr 2025)</li>
-      <li><strong>Teaching Assistant</strong>, MM 221 Lab – Sensors, Instrumentation & Measurements (Aug 2024 – Nov 2024)</li>
+      <li>Instrumentation TA, LRIS Raman – SAIF, IIT Bombay</li>
+      <li>Instrumentation TA, ZEISS FIB SEM – MEMS, IIT Bombay</li>
+      <li>TA, MM 448 – Thin Films & PVD</li>
+      <li>TA, MM 221 – Sensors & Instrumentation</li>
     </ul>
   </div>
 </section>
@@ -200,10 +218,9 @@
   <h2>Skills</h2>
   <div class="card">
     <ul>
-      <li><strong>Programming:</strong> Python, MATLAB, C/C++, Machine Learning, Deep Learning</li>
+      <li><strong>Programming:</strong> Python, MATLAB, C/C++</li>
       <li><strong>Simulation:</strong> FDTD, DFT (VASP), COMSOL</li>
-      <li><strong>Instrumentation:</strong> CVD, PVD, Raman, SEM, FTIR, UTM</li>
-      <li><strong>Tools:</strong> Arduino, Blender, LaTeX, ImageJ</li>
+      <li><strong>Instrumentation:</strong> CVD, PVD, Raman, SEM</li>
     </ul>
   </div>
 </section>
@@ -212,20 +229,20 @@
   <h2>Contact</h2>
   <div class="card">
     <p>Email: <a href="mailto:23D0989@iitb.ac.in">23D0989@iitb.ac.in</a></p>
-    <p>Phone: +91 9556903519</p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/gayatri-subhalaxmi" target="_blank">gayatri-subhalaxmi</a></p>
   </div>
 </section>
 
 <footer>
-  <p>© 2025 Gayatri Subhalaxmi | Academic Portfolio</p>
+  <p>© 2025 Gayatri Subhalaxmi</p>
 </footer>
 
 <script>
   document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      document.querySelector(link.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      document.querySelector(link.getAttribute('href'))
+        .scrollIntoView({ behavior: 'smooth' });
     });
   });
 </script>
